@@ -106,7 +106,7 @@ TIM8_CH2 => DMAMUX1:48 (PPM INPUT)
 // Assigned in timer_config.cpp
 
 // Timer 1                                          /* 7 TIM1UP */
-// Timer 3                                          /* 8 TIM3UP */
+// Timer 2                                          /* 8 TIM2UP */
 
 
 

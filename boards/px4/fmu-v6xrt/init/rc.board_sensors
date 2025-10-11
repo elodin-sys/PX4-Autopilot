@@ -18,6 +18,7 @@
 
 set HAVE_PM2 yes
 set INA_CONFIGURED no
+set INA_CONFIGURED no
 
 if mft query -q -k MFT -s MFT_PM2 -v 0
 then
@@ -43,6 +44,8 @@ then
 	fi
 
 	set INA_CONFIGURED yes
+
+	set INA_CONFIGURED yes
 fi
 
 if param compare SENS_EN_INA228 1
@@ -53,6 +56,8 @@ then
 	then
 		ina228 -X -b 2 -t 2 -k start
 	fi
+
+	set INA_CONFIGURED yes
 
 	set INA_CONFIGURED yes
 fi
@@ -112,5 +117,6 @@ fi
 
 bmp388 -X -b 2 start
 
+unset INA_CONFIGURED
 unset INA_CONFIGURED
 unset HAVE_PM2

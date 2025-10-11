@@ -1,0 +1,9 @@
+#!/bin/sh
+#
+# board specific defaults
+#------------------------------------------------------------------------------
+
+# Added by ABM 7/28/25
+param set-default SENS_INT_BARO_EN 1
+param set-default SENS_INT_MAG_EN 1
+

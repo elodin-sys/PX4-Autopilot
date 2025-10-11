@@ -5,6 +5,13 @@ parameters:
       definitions:
 
         # Gripper configuration
+        PD_GRIPPER_EN:
+            description:
+                short: Enable Gripper actuation in Payload Deliverer
+            type: boolean
+            default: 0
+            reboot_required: true
+
         PD_GRIPPER_TYPE:
             description:
                 short: Type of Gripper (Servo, etc.)
@@ -27,4 +34,4 @@ parameters:
             type: float
             unit: s
             min: 0
-            default: 1
+            default: 3

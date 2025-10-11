@@ -54,7 +54,7 @@ bool PayloadDeliverer::init()
 void PayloadDeliverer::configure_gripper()
 {
 	// If gripper instance is invalid, and user enabled the gripper, try initializing it
-	if (!_gripper.is_valid()) {
+	if (!_gripper.is_valid() && _param_gripper_enable.get()) {
 		GripperConfig config{};
 		config.type = (GripperConfig::GripperType)_param_gripper_type.get();
 		config.sensor = GripperConfig::GripperSensorType::NONE; // Feedback sensor isn't supported for now

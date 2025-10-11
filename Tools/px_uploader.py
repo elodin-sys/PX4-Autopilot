@@ -201,6 +201,7 @@ class uploader:
     INFO_BOARD_ID   = b'\x02'        # board type
     INFO_BOARD_REV  = b'\x03'        # board revision
     INFO_FLASH_SIZE = b'\x04'        # max firmware size in bytes
+    BL_VERSION      = b'\x07'        # get bootloader version, e.g. major.minor.patch.githash (up to 20 chars)
 
     PROG_MULTI_MAX  = 252            # protocol max is 255, must be multiple of 4
     READ_MULTI_MAX  = 252            # protocol max is 255

@@ -104,7 +104,7 @@ private:
 	/**
 	 * @brief Initialize or deinitialize gripper instance based on parameter settings
 	 *
-	 * Depending on the state of `_gripper` instance, this function will
+	 * Depending on `PD_GRIPPER_EN` and the state of `_gripper` instance, this function will
 	 * either try to initialize or de-initialize the gripper appropriately.
 	 */
 	void configure_gripper();
@@ -159,6 +159,7 @@ private:
 
 	DEFINE_PARAMETERS(
 		(ParamFloat<px4::params::PD_GRIPPER_TO>)	_param_gripper_timeout_s,
-		(ParamInt<px4::params::PD_GRIPPER_TYPE>)	_param_gripper_type
+		(ParamInt<px4::params::PD_GRIPPER_TYPE>)	_param_gripper_type,
+		(ParamBool<px4::params::PD_GRIPPER_EN>)		_param_gripper_enable
 	)
 };
