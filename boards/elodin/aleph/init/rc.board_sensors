@@ -1,0 +1,18 @@
+#!/bin/sh
+#
+# PX4 FMUv6X specific board sensors init
+#------------------------------------------------------------------------------
+mount -t vfat /dev/mmcsd0 /mnt/sdcard
+
+# Internal magnetometer on I2c3
+bmm350 start -I -b 3
+
+# Internal barometer on I2C3
+bmp581 start -I -b 3
+
+# BMI270 on SPI5
+bmi270 start -s -b 5
+
+# MS4520do Differential airspeed indicator
+ms4525do start -I -b 4
+

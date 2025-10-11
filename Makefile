@@ -333,6 +333,7 @@ bootloaders_update: \
 	cuav_7-nano_bootloader \
 	cubepilot_cubeorange_bootloader \
 	cubepilot_cubeorangeplus_bootloader \
+	elodin_aleph_bootloader \
 	hkust_nxt-dual_bootloader \
 	hkust_nxt-v1_bootloader \
 	holybro_durandal-v1_bootloader \
