@@ -7,7 +7,7 @@ The .px4board files contain the various configuration options for the firmware, 
 - BMM350
 - BMP581
 
-These drivers are provided in the stock PX4 firmware main branch which is currently at v1.16.0rc3. The Aleph project we inherited was v1.15.2. This [repo](https://github.com/Pictorus-Labs/PX4-Autopilot) branch v1.16.0-rc3-aleph contains the latest v1.16.0rc3 with the Aleph board.
+These drivers are provided in the stock PX4 firmware main branch which is currently at v1.16.0rc3. This [repo](https://github.com/Pictorus-Labs/PX4-Autopilot) branch v1.16.0-rc3-aleph contains the latest v1.16.0rc3 with the Aleph board.
 
 ## Configuring the firmware
 
