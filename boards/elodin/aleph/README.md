@@ -37,7 +37,7 @@ Running `make elodin_aleph_default boardconfig` brings up a TUI that enables con
 
 We should have USB working when the bootloader is successfully flashed, which we can then use with `QGroundControl` to flash the main firmware. `make elodin_aleph_bootloader` creates the bootloader and puts several binary flavors in `./build/elodin_aleph_bootloader`.
 
-You can use STM32CubeProgrammer to write the bootloader binary to address 0x08000000 or flash the ELF. Once this is flashsed, the STM32 USB should appear in `dmesg` alongside the RP2040.
+You can use STM32CubeProgrammer to write the bootloader binary to address 0x08000000 or flash the ELF. Once this is flashed, the STM32 USB should appear in `dmesg` alongside the RP2040.
 
 
 ## List of configuration files
